@@ -1,0 +1,116 @@
+html, body {
+	height: 100%;
+	width: 100%;
+
+}
+.timeslot label {
+	cursor: pointer;
+	/*padding: 10px 20px;*/
+	/*background-color: #d9d9d9;*/
+	border-radius: 5px;
+
+	
+}
+
+/*starting checkbox stuff*/
+.checkbox {
+	display: none;
+}
+
+
+.checkbox:checked ~ label .box {  
+  opacity:0;
+  transform:scale(0) rotate(-180deg);
+}
+
+ /*rotate and show our check */
+.checkbox:checked ~ label .check {
+  opacity:1; 
+  transform:scale(1) rotate(45deg);
+}
+/*ending animations*/
+
+
+.styles {
+	/*position: absolute;
+	left: 5%;*/
+	transition-duration: 0.5s;
+
+}
+.box {
+	display: block;
+	border: 2px solid black;
+	border-radius: 5px;
+	height: 25px;
+	width: 25px;
+	transition-delay: .5s;
+	background-color: red;
+	float: left;
+	margin-top: 10px;
+	
+}
+.check {
+	height: 20px;
+	width: 10px;
+	border: 3px solid #0f9d58; 
+	border-top: 0px;
+	border-left: 0px;
+	transform: rotate(180deg);
+	transition-delay: 0.5s;
+	opacity: 0;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+/*ending checkbox stuff*/
+.text-center {
+	margin: 30px 20px;
+}
+.activity {
+	clear: both;
+	margin-left: 1em;
+	/*overflow: scroll;*/
+}
+.activities {
+	width: 175px;
+	overflow: scroll;
+}
+
+.columns {
+	display: inline-block;
+	/*margin: 0px 50%;*/
+	width: 200px;
+	height: 855px;
+}
+
+.timeslot {
+	width: 200px;
+	height: 115px;
+	border-radius: 15%;
+	border: 1px solid #d8d8d8;
+	
+}a
+
+.mainLabel {
+	margin: 50%;
+}
+.container {
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+}
+.row {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.reset {
+	margin: 0px 50%;
+}
+.head {
+	padding: 15px 0px;
+	background-color: #ddd;
+}
+.head h1 {
+	margin: 0px 50%;
+}

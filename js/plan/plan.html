@@ -1,0 +1,28 @@
+
+
+  <p>    
+    <button class="reset" ng-click="reset()">Reset</button>
+  </p>
+
+
+<div class="row holder">
+	<div class="columns text" ng-repeat="days in days">
+		<h2>{{days.name}}</h2>
+		<div class="timeslot" ng-repeat="slot in days.slots" | orderBy "slot.time">
+			<input type="checkbox" class="checkbox" id="{{days.name}}-{{$index}}" ng-model="slot.booked" ng-disabled="slot.booked">
+			<label for="{{days.name}}-{{$index}}" class="mainLabel">
+				
+				<div class="check styles"></div>
+				<span class="box styles">
+					
+				</span>
+				
+				<p>{{slot.time}}</p>
+				<input type="text" class="activity" placeholder="activity" ng-model="slot.activity" ng-if="slot.booked" maxlength=140> 
+				<label class="activity">{{slot.activity}}</label>
+			</label>
+		</div>
+	</div>
+</div>
+
+  
